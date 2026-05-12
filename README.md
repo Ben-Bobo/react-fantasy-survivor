@@ -1,4 +1,4 @@
-# Family Fantasy Draft — Survivor 50
+# [Family Fantasy Draft — Survivor 50](https://survivor50-fantasy-c6314.web.app/)
 
 > *Outwit. Outplay. Outscore.*
 
