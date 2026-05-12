@@ -30,12 +30,4 @@ npm install
 npm run dev
 ```
 
-The app connects to the live Firestore database, so you'll see real data immediately.
-
----
-
-## Admin Access
-
-Navigate to the **Admin** tab and enter the password. The password is a famous Survivor host's name. You'll know it.
-
----
+The app connects to the live Firestore database
