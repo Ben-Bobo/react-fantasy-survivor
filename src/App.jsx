@@ -232,11 +232,14 @@ function Header({ view, setView, adminAuth }) {
     <header style={{ background: colors.ink, color: colors.bone, padding: '24px 32px', borderBottom: `4px solid ${colors.sunset}`, position: 'relative', overflow: 'hidden' }}>
       <div style={{ position: 'absolute', top: 0, right: 0, width: 200, height: '100%', opacity: 0.08, background: `repeating-linear-gradient(45deg, ${colors.bone} 0px, ${colors.bone} 1px, transparent 1px, transparent 12px)` }} />
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', position: 'relative', zIndex: 1, flexWrap: 'wrap', gap: 16 }}>
-        <div>
-          <div style={{ fontSize: 11, letterSpacing: '0.3em', textTransform: 'uppercase', color: colors.ember, fontWeight: 600, marginBottom: 4 }}>Family Fantasy Draft</div>
-          <h1 style={{ fontFamily: fonts.display, fontWeight: 900, fontSize: 38, margin: 0, letterSpacing: '-0.02em', lineHeight: 1 }}>
-            Survivor <span style={{ color: colors.ember }}>50</span>
-          </h1>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+          <div>
+            <div style={{ fontSize: 11, letterSpacing: '0.3em', textTransform: 'uppercase', color: colors.ember, fontWeight: 600, marginBottom: 4 }}>Family Fantasy Draft</div>
+            <h1 style={{ fontFamily: fonts.display, fontWeight: 900, fontSize: 38, margin: 0, letterSpacing: '-0.02em', lineHeight: 1 }}>
+              Survivor <span style={{ color: colors.ember }}>50</span>
+            </h1>
+          </div>
+          <img src="/jeff.png" alt="Jeff" style={{ height: 64, width: 'auto', animation: 'jeffSway 1.4s ease-in-out infinite' }} />
         </div>
         <div style={{ display: 'flex', gap: 4, background: 'rgba(250,246,232,0.08)', padding: 4, borderRadius: 4 }}>
           <NavBtn active={view === 'public'} onClick={() => setView('public')}>
@@ -247,6 +250,7 @@ function Header({ view, setView, adminAuth }) {
           </NavBtn>
         </div>
       </div>
+      <style>{`@keyframes jeffSway { 0%,100% { transform: translateX(0) rotate(0deg); } 30% { transform: translateX(-6px) rotate(-4deg); } 70% { transform: translateX(6px) rotate(4deg); } }`}</style>
     </header>
   );
 }
