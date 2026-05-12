@@ -4,7 +4,7 @@ import { doc, onSnapshot, setDoc } from 'firebase/firestore';
 import { db } from './firebase';
 
 // ============ CONFIG ============
-const ADMIN_PASSWORD = 'jeffprobst';
+const ADMIN_PASSWORD = import.meta.env.VITE_ADMIN_PASSWORD;
 const FIRESTORE_DOC_PATH = ['leagues', 'survivor50'];
 
 const TEAMS = [

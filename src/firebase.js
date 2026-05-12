@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC0qo5-HSXRcsL9UJ_VTHmRkdNW6f__1r0",
-  authDomain: "survivor50-fantasy-c6314.firebaseapp.com",
-  projectId: "survivor50-fantasy-c6314",
-  storageBucket: "survivor50-fantasy-c6314.firebasestorage.app",
-  messagingSenderId: "305887960513",
-  appId: "1:305887960513:web:86cfa597f8e09ec4eca340"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);
