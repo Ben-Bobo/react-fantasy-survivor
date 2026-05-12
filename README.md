@@ -4,8 +4,6 @@
 
 A real-time fantasy league tracker for watching **Survivor Season 50** with the family. Everyone drafts a team of contestants, points are scored each episode based on in-game events, and the leaderboard updates live for everyone to see.
 
-No spreadsheets. No group texts arguing about the rules. Just standings.
-
 ---
 
 ## Features
@@ -41,14 +39,3 @@ The app connects to the live Firestore database, so you'll see real data immedia
 Navigate to the **Admin** tab and enter the password. The password is a famous Survivor host's name. You'll know it.
 
 ---
-
-## What People Are Saying
-
-> *"Wow!! I am so impressed with this new app!!! Over the top user friendly, and high quality data!"*
-> — Lisa
-
-> *"[this app] is really awesome. Does something like this exist or could you start selling these?"*
-> — Meghan
-
-> *"Cool."*
-> — Abby
