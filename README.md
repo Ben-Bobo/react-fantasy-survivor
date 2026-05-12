@@ -1,16 +1,54 @@
-# React + Vite
+# Family Fantasy Draft — Survivor 50
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> *Outwit. Outplay. Outscore.*
 
-Currently, two official plugins are available:
+A real-time fantasy league tracker for watching **Survivor Season 50** with the family. Everyone drafts a team of contestants, points are scored each episode based on in-game events, and the leaderboard updates live for everyone to see.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+No spreadsheets. No group texts arguing about the rules. Just standings.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- **Live leaderboard** — scores sync in real time via Firestore; no refresh needed
+- **Spoiler gate** — warns viewers who haven't caught up before showing results
+- **Per-episode breakdown** — drill into exactly who scored what and when
+- **Admin panel** — password-protected score entry with episode management, eliminations, merge tracking, and final placements
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Tech Stack
+
+- **React** + **Vite**
+- **Firebase Firestore** — real-time database, all state lives here
+- **Lucide React** — icons
+
+---
+
+## Running Locally
+
+```bash
+npm install
+npm run dev
+```
+
+The app connects to the live Firestore database, so you'll see real data immediately.
+
+---
+
+## Admin Access
+
+Navigate to the **Admin** tab and enter the password. The password is a famous Survivor host's name. You'll know it.
+
+---
+
+## What People Are Saying
+
+> *"Wow!! I am so impressed with this new app!!! Over the top user friendly, and high quality data!"*
+> — Lisa
+
+> *"[this app] is really awesome. Does something like this exist or could you start selling these?"*
+> — Meghan
+
+> *"Cool."*
+> — Abby
